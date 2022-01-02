@@ -10,7 +10,7 @@ with open('coco.names','r') as f:
     classes = f.read().splitlines()
 
 app = Flask(__name__)   
-@app.route('/') 
+@app.route('/',methods= ["POST","GET"]) 
 def index():
     cap = cv2.VideoCapture(0)
     while True:
