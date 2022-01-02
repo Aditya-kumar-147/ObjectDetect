@@ -11,7 +11,6 @@ with open('coco.names','r') as f:
 
 app = Flask(__name__)   
 @app.route('/') 
-
 def index():
     cap = cv2.VideoCapture(0)
     while True:
@@ -58,8 +57,6 @@ def index():
     cv2.destroyAllWindows()
 
     return "success"
-
-
 
 
 if __name__=='__main__':
