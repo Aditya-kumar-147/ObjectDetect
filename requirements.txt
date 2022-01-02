@@ -1,5 +1,0 @@
-gunicorn
-Flask
-numpy
-pandas
-opencv-python
